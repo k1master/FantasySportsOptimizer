@@ -260,6 +260,7 @@ def api_slates():
             slate_info["id"] = row[0]
             slate_info["name"] = row[2][11:16] + " " + row[1]
             slate_list.append(slate_info)
+            
         cur.close()
         return jsonify(slate_list)
 
